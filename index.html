@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta nameةؤ="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>  amani  </title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    /* تأثير الجسيمات المتحركة */
+    .particles {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 1;
+    }
+    
+    .particle {
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background: rgba(255, 182, 193, 0.8);
+      border-radius: 50%;
+      animation: float 6s infinite ease-in-out;
+    }
+    
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 0;
+      }
+      10% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-100px) rotate(360deg);
+        opacity: 0;
+      }
+    }
+    
+    /* طبقة تظليل للخلفية */
+    .background-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg, rgba(255, 105, 180, 0.3), rgba(255, 20, 147, 0.2));
+      z-index: 2;
+    }
+    
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 10;
+      position: relative;
+    }
+    
+    /* عنوان رومانسي */
+    .romantic-title {
+      font-size: 2.5em;
+      margin-bottom: 30px;
+      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+      animation: pulse 2s infinite;
+      background: linear-gradient(45deg, #ff69b4, #ff1493, #ffc0cb);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+    
+    /* الزر الرئيسي */
+    .main-button {
+      background: linear-gradient(45deg, #ff4b5c, #ff1e3c, #e91e63);
+      border: none;
+      color: white;
+      padding: 20px 40px;
+      font-size: 24px;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 25px rgba(255, 75, 92, 0.4);
+      position: relative;
+      overflow: hidden;
+      font-weight: bold;
+    }
+    
+    .main-button::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+      transition: left 0.5s;
+    }
+    
+    .main-button:hover::before {
+      left: 100%;
+    }
+    
+    .main-button:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(255, 75, 92, 0.6);
+    }
+    
+    .main-button:active {
+      transform: translateY(-2px);
+    }
+    
+    /* أزرار إضافية */
+    .extra-buttons {
+      margin-top: 30px;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .extra-button {
+      background: linear-gradient(45deg, #4CAF50, #45a049);
+      border: none;
+      color: white;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+    }
+    
+    .extra-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(76, 175, 80, 0.4);
+    }
+    
+    /* مؤشر الحب */
+    .love-counter {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 15px;
+      border-radius: 20px;
+      color: #ff69b4;
+      font-size: 18px;
+      font-weight: bold;
+      z-index: 100;
+      border: 2px solid #ff69b4;
+    }
+    
+    /* موسيقى التحكم */
+    .music-control {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 100;
+    }
+    
+    .music-button {
+      background: rgba(0, 0, 0, 0.7);
+      border: 2px solid #ff69b4;
+      color: #ff69b4;
+      padding: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 20px;
+      transition: all 0.3s ease;
+    }
+    
+    .music-button:hover {
+      background: #ff69b4;
+      color: white;
+    }
+    
+    /* قلوب متحركة */
+    .floating-heart {
+      position: fixed;
+      font-size: 20px;
+      color: #ff69b4;
+      pointer-events: none;
+      animation: floatUp 3s ease-out forwards;
+      z-index: 1000;
+    }
+    
+    @keyframes floatUp {
+      0% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(-100px) scale(1.5);
+      }
+    }
+    
+    /* تأثيرات الشاشة الصغيرة */
+    @media (max-width: 768px) {
+      .romantic-title {
+        font-size: 2em;
+      }
+      .main-button {
+        padding: 15px 30px;
+        font-size: 20px;
+      }
+      .extra-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- طبقة الجسيمات -->
+  <div class="particles" id="particles"></div>
+  
+  <!-- طبقة التظليل -->
+  <div class="background-overlay"></div>
+  
+  <!-- مؤشر الحب -->
+  <div class="love-counter">
+    💕 عدد الضغطات: <span id="clickCount">0</span>
+  </div>
+  
+  <!-- تحكم الموسيقى -->
+  <div class="music-control">
+    <button class="music-button" id="musicToggle" onclick="toggleMusic()">🎵</button>
+  </div>
+  
+  <div class="container">
+    <h1 class="romantic-title">💖amani💖</h1>
+    <button class="main-button" onclick="showMessage()">اضغطي هنا  </button>
+    
+    <div class="extra-buttons">
+      <button class="extra-button" onclick="changeTheme()">تغيير اللون 🎨</button>
+    </div>
+  </div>
+
+  <!-- عنصر الصوت -->
+  <audio id="backgroundMusic" loop>
+    <source src="data:audio/wav;base64," type="audio/wav">
+  </audio>
+
+  <script>
+    let clickCount = parseInt(localStorage.getItem('clickCount') || '0');
+    let isPlayingMusic = false;
+    
+    // تحديث عداد الضغطات
+    document.getElementById('clickCount').textContent = clickCount;
+    
+    // إنشاء الجسيمات
+    function createParticles() {
+      const particlesContainer = document.getElementById('particles');
+      for (let i = 0; i < 50; i++) {
+        const particle = document.createElement('div');
+        particle.classList.add('particle');
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.animationDelay = Math.random() * 6 + 's';
+        particle.style.animationDuration = (Math.random() * 3 + 3) + 's';
+        particlesContainer.appendChild(particle);
+      }
+    }
+    
+    // إنشاء قلوب متحركة
+    function createFloatingHeart(x, y) {
+      const heart = document.createElement('div');
+      heart.classList.add('floating-heart');
+      heart.innerHTML = '💖';
+      heart.style.left = x + 'px';
+      heart.style.top = y + 'px';
+      document.body.appendChild(heart);
+      
+      setTimeout(() => {
+        document.body.removeChild(heart);
+      }, 3000);
+    }
+    
+    // الدالة الرئيسية لإظهار الرسالة
+    function showMessage() {
+      clickCount++;
+      localStorage.setItem('clickCount', clickCount.toString());
+      document.getElementById('clickCount').textContent = clickCount;
+      
+const messages = [
+  "أماني إنسانة طيبة جدًا 🌸",
+  "اسمك مميز يا أماني ✨",
+  "أماني صاحبة حضور جميل 🌺",
+  "كلامك دائمًا راقي يا أماني 🌷",
+  "أماني شخصية ذكية 👩‍🎓",
+  "أحب طريقتك في التفكير يا أماني 💡",
+  "أماني عندك أسلوب مميز 📝",
+  "دائمًا متفائلة يا أماني 🌈",
+  "أماني شخص يعتمد عليه 💪",
+  "أفكارك رائعة يا أماني 📚",
+  "أماني شخص إيجابي 🌞",
+  "اسم أماني يبعث طاقة حلوة 🌟",
+  "أماني عندك أسلوب راقي جدًا 🎀",
+  "أنت ملهمة يا أماني 🕊",
+  "أماني مثال للجد والاجتهاد 🎓",
+  "اسمك يحمل معنى جميل يا أماني 🌹",
+  "أماني عندك لمسة خاصة في كل شيء 🌼",
+  "أسلوبك يخلّي أي نقاش ممتع يا أماني 🎤",
+  "أماني شخصية محترمة 👏",
+  "من الناس اللي يُفتخر بمعرفتهم يا أماني 🤝",
+  "أماني عنوان البساطة والرقي 🌺",
+  "تواجدك دائمًا يضيف جو جميل يا أماني 🌞",
+  "أماني عندك طاقة إيجابية تبعث راحة 🌸",
+  "اسمك على مسماه يا أماني، راحة وطمأنينة 🕊",
+  "أماني إنسانة لطيفة جدًا 💐",
+  "معنى اسمك يليق بك يا أماني 🌷",
+  "أماني دائمًا عندك فكر جديد 🌟",
+  "أنت شخص جدير بالاحترام يا أماني 🙌",
+  "أماني تبعثي طاقة إيجابية لكل من حولك 🌈",
+  "سهل التعامل معك جدًا يا أماني 🤗"
+];
+
+      
+      const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+      localStorage.setItem('randomMessage', randomMessage);
+      
+      // إنشاء قلوب متحركة
+      for (let i = 0; i < 5; i++) {
+        setTimeout(() => {
+          createFloatingHeart(
+            Math.random() * window.innerWidth,
+            Math.random() * window.innerHeight
+          );
+        }, i * 200);
+      }
+      
+      window.location.href = 'message.html';
+    }
+    
+    // إرسال حب
+    function sendLove() {
+      for (let i = 0; i < 10; i++) {
+        setTimeout(() => {
+          createFloatingHeart(
+            Math.random() * window.innerWidth,
+            Math.random() * window.innerHeight
+          );
+        }, i * 100);
+      }
+      
+      // تأثير اهتزاز للشاشة
+      document.body.style.animation = 'shake 0.5s';
+      setTimeout(() => {
+        document.body.style.animation = '';
+      }, 500);
+    }
+    
+    // عرض الإحصائيات
+    function showStats() {
+      const stats = `
+        📊 إحصائياتك -* :
+        💕 عدد الضغطات: ${clickCount}
+        ⭐ التقييم: ${Math.min(5, Math.floor(clickCount / 10))} نجوم
+      `;
+      alert(stats);
+    }
+    
+    // تغيير اللون
+    function changeTheme() {
+      const themes = [
+        'linear-gradient(45deg, rgba(255, 105, 180, 0.3), rgba(255, 20, 147, 0.2))',
+        'linear-gradient(45deg, rgba(138, 43, 226, 0.3), rgba(75, 0, 130, 0.2))',
+        'linear-gradient(45deg, rgba(255, 140, 0, 0.3), rgba(255, 69, 0, 0.2))',
+        'linear-gradient(45deg, rgba(0, 191, 255, 0.3), rgba(30, 144, 255, 0.2))',
+        'linear-gradient(45deg, rgba(50, 205, 50, 0.3), rgba(0, 128, 0, 0.2))'
+      ];
+      
+      const randomTheme = themes[Math.floor(Math.random() * themes.length)];
+      document.querySelector('.background-overlay').style.background = randomTheme;
+    }
+    
+    // تحكم الموسيقى (محاكاة)
+    function toggleMusic() {
+      const button = document.getElementById('musicToggle');
+      isPlayingMusic = !isPlayingMusic;
+      
+      if (isPlayingMusic) {
+        button.innerHTML = '🎵';
+        button.style.animation = 'pulse 1s infinite';
+      } else {
+        button.innerHTML = '🔇';
+        button.style.animation = '';
+      }
+    }
+    
+    // إضافة تأثير الاهتزاز
+    const shakeKeyframes = `
+      @keyframes shake {
+        0%, 100% { transform: translateX(0); }
+        25% { transform: translateX(-5px); }
+        75% { transform: translateX(5px); }
+      }
+    `;
+    const style = document.createElement('style');
+    style.innerHTML = shakeKeyframes;
+    document.head.appendChild(style);
+    
+    // نظام إدارة الصور المحسن
+    function getImagePool() {
+      const stored = localStorage.getItem('imagePool');
+      return stored ? JSON.parse(stored) : [];
+    }
+
+    function saveImagePool(pool) {
+      localStorage.setItem('imagePool', JSON.stringify(pool));
+    }
+
+    function shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+    }
+
+    function getNextImageNumber() {
+      let pool = getImagePool();
+      if (pool.length === 0) {
+        pool = Array.from({ length: 20 }, (_, i) => i + 1);
+        shuffleArray(pool);
+      }
+      const nextImage = pool.pop();
+      saveImagePool(pool);
+      return nextImage;
+    }
+
+    function setRandomBackground() {
+      const imageNumber = getNextImageNumber();
+      document.body.style.backgroundImage = `url('images/${imageNumber}.jfif')`;
+    }
+    
+    // تشغيل الخلفية والجسيمات عند تحميل الصفحة
+    document.addEventListener('DOMContentLoaded', () => {
+      setRandomBackground();
+      createParticles();
+      
+      // تغيير الخلفية كل 10 ثوان
+      setInterval(() => {
+        setRandomBackground();
+      }, 10000);
+    });
+    
+    // إضافة مؤثرات صوتية للنقر
+    document.addEventListener('click', (e) => {
+      // محاكاة صوت النقر
+      if (e.target.tagName === 'BUTTON') {
+        e.target.style.transform = 'scale(0.95)';
+        setTimeout(() => {
+          e.target.style.transform = '';
+        }, 100);
+      }
+    });
+  </script>
+</body>
+</html>

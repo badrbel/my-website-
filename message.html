@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>رسائله</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      color: white;
+      position: relative;
+      transition: background 1s ease-in-out;
+      overflow: hidden;
+    }
+    
+    /* طبقة تظليل للخلفية */
+    .background-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg, rgba(0, 0, 0, 0.4), rgba(255, 20, 147, 0.2));
+      z-index: 1;
+    }
+    
+    /* حاوية الرسالة المحسنة */
+    .message-container {
+      font-size: 28px;
+      font-weight: bold;
+      background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(255, 20, 147, 0.3));
+      padding: 40px;
+      border-radius: 20px;
+      display: inline-block;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+      min-width: 300px;
+      max-width: 80%;
+      backdrop-filter: blur(10px);
+      border: 2px solid rgba(255, 182, 193, 0.5);
+      box-shadow: 0 20px 60px rgba(255, 20, 147, 0.3);
+      animation: messageGlow 3s ease-in-out infinite alternate;
+      z-index: 10;
+      position: relative;
+      line-height: 1.4;
+    }
+    
+    @keyframes messageGlow {
+      0% {
+        box-shadow: 0 20px 60px rgba(255, 20, 147, 0.3);
+        transform: translateY(0);
+      }
+      100% {
+        box-shadow: 0 25px 80px rgba(255, 20, 147, 0.5);
+        transform: translateY(-5px);
+      }
+    }
+    
+    /* تأثير الكتابة */
+    .typing-cursor {
+      animation: blink 1s infinite;
+    }
+    
+    @keyframes blink {
+      0%, 50% { opacity: 1; }
+      51%, 100% { opacity: 0; }
+    }
+    
+    /* حاوية الأزرار المحسنة */
+    .buttons-container {
+      position: absolute;
+      bottom: 40px;
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      z-index: 10;
+      flex-wrap: wrap;
+    }
+    
+    .button {
+      background: linear-gradient(45deg, #4CAF50, #45a049);
+      border: none;
+      color: white;
+      padding: 15px 30px;
+      font-size: 18px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 25px rgba(76, 175, 80, 0.3);
+      font-weight: bold;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .button::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+      transition: left 0.5s;
+    }
+    
+    .button:hover::before {
+      left: 100%;
+    }
+    
+    .button:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(76, 175, 80, 0.5);
+    }
+    
+    .button:active {
+      transform: translateY(-2px);
+    }
+    
+    /* أزرار إضافية في الأعلى */
+    .top-buttons {
+      position: absolute;
+      top: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 20px;
+      z-index: 20;
+    }
+    
+    .top-button {
+      background: rgba(0, 0, 0, 0.7);
+      border: 2px solid #ff69b4;
+      color: #ff69b4;
+      padding: 10px 15px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: all 0.3s ease;
+      font-weight: bold;
+    }
+    
+    .top-button:hover {
+      background: #ff69b4;
+      color: white;
+      transform: scale(1.05);
+    }
+    
+    /* قلوب متحركة */
+    .floating-heart {
+      position: fixed;
+      font-size: 25px;
+      pointer-events: none;
+      animation: floatUp 4s ease-out forwards;
+      z-index: 1000;
+    }
+    
+    @keyframes floatUp {
+      0% {
+        opacity: 1;
+        transform: translateY(0) rotate(0deg) scale(1);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(-150px) rotate(360deg) scale(1.8);
+      }
+    }
+    
+    /* نجوم متحركة في الخلفية */
+    .stars {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+    }
+    
+    .star {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: white;
+      border-radius: 50%;
+      animation: twinkle 2s infinite ease-in-out;
+    }
+    
+    @keyframes twinkle {
+      0%, 100% { opacity: 0; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.5); }
+    }
+    
+    /* مؤشر التقدم للرسائل */
+    .progress-bar {
+      position: absolute;
+      bottom: 120px;
+      width: 80%;
+      height: 8px;
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 10px;
+      overflow: hidden;
+      z-index: 10;
+    }
+    
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(45deg, #ff69b4, #ff1493);
+      border-radius: 10px;
+      transition: width 0.3s ease;
+      animation: progressGlow 2s ease-in-out infinite alternate;
+    }
+    
+    @keyframes progressGlow {
+      0% { box-shadow: 0 0 10px rgba(255, 20, 147, 0.5); }
+      100% { box-shadow: 0 0 20px rgba(255, 20, 147, 0.8); }
+    }
+    
+    @keyframes shake {
+      0%, 100% { transform: translateX(0) translateY(0); }
+      25% { transform: translateX(-8px) translateY(-8px); }
+      50% { transform: translateX(8px) translateY(-8px); }
+      75% { transform: translateX(-8px) translateY(8px); }
+    }
+    
+    /* تأثيرات الشاشة الصغيرة */
+    @media (max-width: 768px) {
+      .message-container {
+        font-size: 22px;
+        padding: 30px 20px;
+        min-width: 90%;
+      }
+      .buttons-container {
+        bottom: 20px;
+        justify-content: center;
+      }
+      .button {
+        padding: 12px 20px;
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- طبقة التظليل -->
+  <div class="background-overlay"></div>
+  
+  <!-- النجوم المتحركة -->
+  <div class="stars" id="stars"></div>
+  
+  <!-- الأزرار العلوية -->
+  <div class="top-buttons">
+    <button class="top-button" onclick="shareMessage()">مشاركة 📤</button>
+    <button class="top-button" onclick="addToFavorites()">المفضلة ⭐</button>
+    <button class="top-button" onclick="copyMessage()">نسخ 📋</button>
+  </div>
+  
+  <!-- الرسالة الرئيسية -->
+  <div class="message-container" id="message"></div>
+  
+  <!-- مؤشر التقدم -->
+  <div class="progress-bar">
+    <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+  </div>
+  
+  <!-- الأزرار السفلية -->
+  <div class="buttons-container">
+    <button class="button" onclick="refreshMessage()">رسالة جديدة 💖</button>
+    <button class="button" onclick="autoPlay()">تشغيل تلقائي ⏯️</button>
+    <button class="button" onclick="sendLove()">أرسل  💕</button>
+    <button class="button" onclick="goBack()">العودة 🏠</button>
+  </div>
+
+  <script>
+    let messagePool = [];
+    let currentMessageIndex = 0;
+    let isAutoPlaying = false;
+    let autoPlayInterval;
+    let favoriteMessages = [];
+    let imagePool = [];
+
+    // محاولة تحميل البيانات المحفوظة
+    try {
+      const savedFavorites = localStorage.getItem('favoriteMessages');
+      if (savedFavorites) favoriteMessages = JSON.parse(savedFavorites);
+    } catch (e) {
+      console.log('لا يمكن تحميل المفضلة');
+    }
+
+    const allMessages = [
+      "أماني إنسانة طيبة جدًا 🌸",
+      "اسمك مميز يا أماني ✨",
+      "أماني صاحبة حضور جميل 🌺",
+      "كلامك دائمًا راقي يا أماني 🌷",
+      "أماني شخصية ذكية 👩‍🎓",
+      "أحب طريقتك في التفكير يا أماني 💡",
+      "أماني عندك أسلوب مميز 📝",
+      "دائمًا متفائلة يا أماني 🌈",
+      "أماني شخص يعتمد عليه 💪",
+      "أفكارك رائعة يا أماني 📚",
+      "أماني شخص إيجابي 🌞",
+      "اسم أماني يبعث طاقة حلوة 🌟",
+      "أماني عندك أسلوب راقي جدًا 🎀",
+      "أنت ملهمة يا أماني 🕊",
+      "أماني مثال للجد والاجتهاد 🎓",
+      "اسمك يحمل معنى جميل يا أماني 🌹",
+      "أماني عندك لمسة خاصة في كل شيء 🌼",
+      "أسلوبك يخلّي أي نقاش ممتع يا أماني 🎤",
+      "أماني شخصية محترمة 👏",
+      "من الناس اللي يُفتخر بمعرفتهم يا أماني 🤝",
+      "أماني عنوان البساطة والرقي 🌺",
+      "تواجدك دائمًا يضيف جو جميل يا أماني 🌞",
+      "أماني عندك طاقة إيجابية تبعث راحة 🌸",
+      "اسمك على مسماه يا أماني، راحة وطمأنينة 🕊",
+      "أماني إنسانة لطيفة جدًا 💐",
+      "معنى اسمك يليق بك يا أماني 🌷",
+      "أماني دائمًا عندك فكر جديد 🌟",
+      "أنت شخص جدير بالاحترام يا أماني 🙌",
+      "أماني تبعثي طاقة إيجابية لكل من حولك 🌈",
+      "سهل التعامل معك جدًا يا أماني 🤗"
+    ];
+
+    // خلط الرسائل
+    function shuffleMessages() {
+      messagePool = [...allMessages];
+      for (let i = messagePool.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [messagePool[i], messagePool[j]] = [messagePool[j], messagePool[i]];
+      }
+      currentMessageIndex = 0;
+    }
+
+    // الحصول على الرسالة التالية
+    function getNextMessage() {
+      if (messagePool.length === 0) shuffleMessages();
+      const message = messagePool[currentMessageIndex];
+      currentMessageIndex = (currentMessageIndex + 1) % messagePool.length;
+      updateProgressBar();
+      return message;
+    }
+
+    // تحديث مؤشر التقدم
+    function updateProgressBar() {
+      const progress = (currentMessageIndex / messagePool.length) * 100;
+      document.getElementById('progressFill').style.width = progress + '%';
+    }
+
+    // كتابة الرسالة بتأثير الآلة الكاتبة
+    function typeMessage(text, elementId) {
+      let i = 0;
+      let element = document.getElementById(elementId);
+      element.innerHTML = "";
+      
+      function typing() {
+        if (i < text.length) {
+          element.innerHTML += text[i] === " " ? "&nbsp;" : text[i];
+          i++;
+          setTimeout(typing, 80);
+        } else {
+          // إضافة مؤشر الكتابة في النهاية
+          element.innerHTML += '<span class="typing-cursor">|</span>';
+          setTimeout(() => {
+            const cursor = element.querySelector('.typing-cursor');
+            if (cursor) cursor.remove();
+          }, 2000);
+        }
+      }
+      typing();
+    }
+
+    // إنشاء قلوب متحركة
+    function createFloatingHearts(count = 8) {
+      const hearts = ['💖', '💕', '💗', '💝', '💓', '❤️', '🌹', '🌺'];
+      
+      for (let i = 0; i < count; i++) {
+        setTimeout(() => {
+          const heart = document.createElement('div');
+          heart.classList.add('floating-heart');
+          heart.innerHTML = hearts[Math.floor(Math.random() * hearts.length)];
+          heart.style.left = Math.random() * window.innerWidth + 'px';
+          heart.style.top = (window.innerHeight - 100) + 'px';
+          heart.style.color = `hsl(${Math.random() * 60 + 300}, 70%, 60%)`;
+          document.body.appendChild(heart);
+          
+          setTimeout(() => {
+            if (document.body.contains(heart)) {
+              document.body.removeChild(heart);
+            }
+          }, 4000);
+        }, i * 200);
+      }
+    }
+
+    // إنشاء النجوم
+    function createStars() {
+      const starsContainer = document.getElementById('stars');
+      for (let i = 0; i < 100; i++) {
+        const star = document.createElement('div');
+        star.classList.add('star');
+        star.style.left = Math.random() * 100 + '%';
+        star.style.top = Math.random() * 100 + '%';
+        star.style.animationDelay = Math.random() * 2 + 's';
+        starsContainer.appendChild(star);
+      }
+    }
+
+    // إدارة الصور
+    function getImagePool() {
+      return imagePool;
+    }
+
+    function saveImagePool(pool) {
+      imagePool = pool;
+    }
+
+    function shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+    }
+
+    function getNextImageNumber() {
+      let pool = getImagePool();
+      if (pool.length === 0) {
+        pool = Array.from({ length: 20 }, (_, i) => i + 1);
+        shuffleArray(pool);
+      }
+      const nextImage = pool.pop();
+      saveImagePool(pool);
+      return nextImage;
+    }
+
+    function setRandomBackground() {
+      const colors = [
+        'linear-gradient(45deg, #ff6b6b, #ffd93d)',
+        'linear-gradient(45deg, #74b9ff, #0984e3)',
+        'linear-gradient(45deg, #fd79a8, #fdcb6e)',
+        'linear-gradient(45deg, #6c5ce7, #a29bfe)',
+        'linear-gradient(45deg, #00b894, #55efc4)',
+        'linear-gradient(45deg, #e84393, #fd79a8)',
+        'linear-gradient(45deg, #00cec9, #55efc4)'
+      ];
+      
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+      document.body.style.background = randomColor;
+    }
+
+    // تحديث الرسالة
+    function refreshMessage() {
+      const newMessage = getNextMessage();
+      // حفظ الرسالة في الذاكرة فقط
+      typeMessage(newMessage, "message");
+      setRandomBackground();
+      createFloatingHearts(5);
+    }
+
+    // التشغيل التلقائي
+    function autoPlay() {
+      const button = event.target;
+      if (isAutoPlaying) {
+        clearInterval(autoPlayInterval);
+        isAutoPlaying = false;
+        button.innerHTML = 'تشغيل تلقائي ⏯️';
+        button.style.background = 'linear-gradient(45deg, #4CAF50, #45a049)';
+      } else {
+        isAutoPlaying = true;
+        button.innerHTML = 'إيقاف ⏸️';
+        button.style.background = 'linear-gradient(45deg, #f44336, #d32f2f)';
+        autoPlayInterval = setInterval(() => {
+          refreshMessage();
+        }, 5000);
+      }
+    }
+
+    // إرسال حب
+    function sendLove() {
+      createFloatingHearts(15);
+      
+      // تأثير اهتزاز
+      document.body.style.animation = 'shake 0.8s';
+      setTimeout(() => {
+        document.body.style.animation = '';
+      }, 800);
+      
+      // تغيير لون الخلفية مؤقتاً
+      const overlay = document.querySelector('.background-overlay');
+      const originalBg = overlay.style.background;
+      overlay.style.background = 'linear-gradient(45deg, rgba(255, 20, 147, 0.6), rgba(255, 105, 180, 0.4))';
+      setTimeout(() => {
+        overlay.style.background = originalBg || 'linear-gradient(45deg, rgba(0, 0, 0, 0.4), rgba(255, 20, 147, 0.2))';
+      }, 1000);
+    }
+
+    // مشاركة الرسالة
+    function shareMessage() {
+      const message = document.getElementById('message').textContent;
+      if (navigator.share) {
+        navigator.share({
+          title: 'رسالة حب',
+          text: message,
+        }).catch(() => {
+          copyMessage();
+          alert('تم نسخ الرسالة! يمكنك مشاركتها الآن 💕');
+        });
+      } else {
+        copyMessage();
+        alert('تم نسخ الرسالة! يمكنك مشاركتها الآن 💕');
+      }
+    }
+
+    // إضافة للمفضلة
+    function addToFavorites() {
+      const message = document.getElementById('message').textContent;
+      if (!favoriteMessages.includes(message)) {
+        favoriteMessages.push(message);
+        // حفظ في الذاكرة فقط
+        alert('تمت إضافة الرسالة للمفضلة! ⭐');
+        createFloatingHearts(3);
+      } else {
+        alert('الرسالة موجودة في المفضلة بالفعل! 💕');
+      }
+    }
+
+    // نسخ الرسالة
+    function copyMessage() {
+      const message = document.getElementById('message').textContent;
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(message).then(() => {
+          const button = event.target;
+          const originalText = button.innerHTML;
+          button.innerHTML = 'تم النسخ ✅';
+          setTimeout(() => {
+            button.innerHTML = originalText;
+          }, 2000);
+        }).catch(() => {
+          fallbackCopyTextToClipboard(message);
+        });
+      } else {
+        fallbackCopyTextToClipboard(message);
+      }
+    }
+
+    // نسخ احتياطي
+    function fallbackCopyTextToClipboard(text) {
+      const textArea = document.createElement("textarea");
+      textArea.value = text;
+      document.body.appendChild(textArea);
+      textArea.focus();
+      textArea.select();
+      try {
+        document.execCommand('copy');
+        alert('تم نسخ الرسالة! 📋');
+      } catch (err) {
+        console.error('فشل النسخ', err);
+      }
+      document.body.removeChild(textArea);
+    }
+
+    // العودة للصفحة الرئيسية
+function goBack() {
+  if (isAutoPlaying) {
+    clearInterval(autoPlayInterval);
+  }
+  window.location.href = "index.html"; // أو ضع هنا رابط الصفحة الرئيسية
+}
+
+
+    // تحميل الصفحة
+    document.addEventListener("DOMContentLoaded", () => {
+      const firstMessage = getNextMessage();
+      typeMessage(firstMessage, "message");
+      setRandomBackground();
+      createStars();
+      
+      // تغيير الخلفية كل 15 ثانية
+      setInterval(() => {
+        if (!isAutoPlaying) {
+          setRandomBackground();
+        }
+      }, 15000);
+    });
+
+    // إضافة اختصارات لوحة المفاتيح
+    document.addEventListener('keydown', (e) => {
+      switch(e.code) {
+        case 'Space':
+          e.preventDefault();
+          refreshMessage();
+          break;
+        case 'KeyH':
+          sendLove();
+          break;
+        case 'KeyF':
+          addToFavorites();
+          break;
+        case 'KeyC':
+          copyMessage();
+          break;
+        case 'Escape':
+          goBack();
+          break;
+      }
+    });
+
+    // تأثيرات إضافية عند النقر
+    document.addEventListener('click', (e) => {
+      if (e.target.classList.contains('message-container')) {
+        createFloatingHearts(3);
+      }
+    });
+  </script>
+</body>
+</html>
