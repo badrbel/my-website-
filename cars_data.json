@@ -18,6 +18,1385 @@
               "https://example.com/peugeot208/battery_1.jpg",
               "https://example.com/peugeot208/battery_2.jpg"
             ]
+          },
+          {
+            "name": "فلتر هواء",
+            "price": 2200,
+            "images": [
+              "https://example.com/peugeot208/air_filter_1.jpg",
+              "https://example.com/peugeot208/air_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "شمعات احتراق",
+            "price": 3500,
+            "images": [
+              "https://example.com/suzukiswift/spark_plugs_1.jpg",
+              "https://example.com/suzukiswift/spark_plugs_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 7500,
+            "images": [
+              "https://example.com/suzukiswift/front_brakes_1.jpg",
+              "https://example.com/suzukiswift/front_brakes_2.jpg"
+            ]
+          }
+        ]
+      },
+      "Celerio": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 2000,
+            "images": [
+              "https://example.com/suzukicelerio/oil_filter_1.jpg",
+              "https://example.com/suzukicelerio/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 12500,
+            "images": [
+              "https://example.com/suzukicelerio/battery_1.jpg",
+              "https://example.com/suzukicelerio/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فلتر هواء",
+            "price": 1700,
+            "images": [
+              "https://example.com/suzukicelerio/air_filter_1.jpg",
+              "https://example.com/suzukicelerio/air_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "شمعات احتراق",
+            "price": 3200,
+            "images": [
+              "https://example.com/suzukicelerio/spark_plugs_1.jpg",
+              "https://example.com/suzukicelerio/spark_plugs_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 6500,
+            "images": [
+              "https://example.com/suzukicelerio/front_brakes_1.jpg",
+              "https://example.com/suzukicelerio/front_brakes_2.jpg"
+            ]
+          }
+        ]
+      },
+      "Vitara": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 2700,
+            "images": [
+              "https://example.com/suzukivitara/oil_filter_1.jpg",
+              "https://example.com/suzukivitara/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 16000,
+            "images": [
+              "https://example.com/suzukivitara/battery_1.jpg",
+              "https://example.com/suzukivitara/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 9000,
+            "images": [
+              "https://example.com/suzukivitara/front_brakes_1.jpg",
+              "https://example.com/suzukivitara/front_brakes_2.jpg"
+            ]
+          },
+          {
+            "name": "مساعدين أمامي",
+            "price": 17500,
+            "images": [
+              "https://example.com/suzukivitara/front_shocks_1.jpg",
+              "https://example.com/suzukivitara/front_shocks_2.jpg"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "Mazda": {
+    "models": {
+      "3": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 2800,
+            "images": [
+              "https://example.com/mazda3/oil_filter_1.jpg",
+              "https://example.com/mazda3/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 16500,
+            "images": [
+              "https://example.com/mazda3/battery_1.jpg",
+              "https://example.com/mazda3/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فلتر هواء",
+            "price": 2300,
+            "images": [
+              "https://example.com/mazda3/air_filter_1.jpg",
+              "https://example.com/mazda3/air_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "شمعات احتراق",
+            "price": 4100,
+            "images": [
+              "https://example.com/mazda3/spark_plugs_1.jpg",
+              "https://example.com/mazda3/spark_plugs_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 9200,
+            "images": [
+              "https://example.com/mazda3/front_brakes_1.jpg",
+              "https://example.com/mazda3/front_brakes_2.jpg"
+            ]
+          },
+          {
+            "name": "مساعدين أمامي",
+            "price": 18500,
+            "images": [
+              "https://example.com/mazda3/front_shocks_1.jpg",
+              "https://example.com/mazda3/front_shocks_2.jpg"
+            ]
+          }
+        ]
+      },
+      "CX-5": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 3200,
+            "images": [
+              "https://example.com/mazdacx5/oil_filter_1.jpg",
+              "https://example.com/mazdacx5/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 19000,
+            "images": [
+              "https://example.com/mazdacx5/battery_1.jpg",
+              "https://example.com/mazdacx5/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 11000,
+            "images": [
+              "https://example.com/mazdacx5/front_brakes_1.jpg",
+              "https://example.com/mazdacx5/front_brakes_2.jpg"
+            ]
+          },
+          {
+            "name": "مساعدين أمامي",
+            "price": 21000,
+            "images": [
+              "https://example.com/mazdacx5/front_shocks_1.jpg",
+              "https://example.com/mazdacx5/front_shocks_2.jpg"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "Mitsubishi": {
+    "models": {
+      "Pajero": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 3500,
+            "images": [
+              "https://example.com/mitsubishipajero/oil_filter_1.jpg",
+              "https://example.com/mitsubishipajero/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 22000,
+            "images": [
+              "https://example.com/mitsubishipajero/battery_1.jpg",
+              "https://example.com/mitsubishipajero/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فلتر هواء",
+            "price": 2800,
+            "images": [
+              "https://example.com/mitsubishipajero/air_filter_1.jpg",
+              "https://example.com/mitsubishipajero/air_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 12500,
+            "images": [
+              "https://example.com/mitsubishipajero/front_brakes_1.jpg",
+              "https://example.com/mitsubishipajero/front_brakes_2.jpg"
+            ]
+          },
+          {
+            "name": "مساعدين أمامي",
+            "price": 24000,
+            "images": [
+              "https://example.com/mitsubishipajero/front_shocks_1.jpg",
+              "https://example.com/mitsubishipajero/front_shocks_2.jpg"
+            ]
+          }
+        ]
+      },
+      "L200": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 3300,
+            "images": [
+              "https://example.com/mitsubishil200/oil_filter_1.jpg",
+              "https://example.com/mitsubishil200/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 21000,
+            "images": [
+              "https://example.com/mitsubishil200/battery_1.jpg",
+              "https://example.com/mitsubishil200/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 11500,
+            "images": [
+              "https://example.com/mitsubishil200/front_brakes_1.jpg",
+              "https://example.com/mitsubishil200/front_brakes_2.jpg"
+            ]
+          },
+          {
+            "name": "مساعدين أمامي",
+            "price": 23000,
+            "images": [
+              "https://example.com/mitsubishil200/front_shocks_1.jpg",
+              "https://example.com/mitsubishil200/front_shocks_2.jpg"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "Skoda": {
+    "models": {
+      "Fabia": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 2600,
+            "images": [
+              "https://example.com/skodafabia/oil_filter_1.jpg",
+              "https://example.com/skodafabia/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 15500,
+            "images": [
+              "https://example.com/skodafabia/battery_1.jpg",
+              "https://example.com/skodafabia/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فلتر هواء",
+            "price": 2200,
+            "images": [
+              "https://example.com/skodafabia/air_filter_1.jpg",
+              "https://example.com/skodafabia/air_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "شمعات احتراق",
+            "price": 3900,
+            "images": [
+              "https://example.com/skodafabia/spark_plugs_1.jpg",
+              "https://example.com/skodafabia/spark_plugs_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 8500,
+            "images": [
+              "https://example.com/skodafabia/front_brakes_1.jpg",
+              "https://example.com/skodafabia/front_brakes_2.jpg"
+            ]
+          }
+        ]
+      },
+      "Octavia": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 3000,
+            "images": [
+              "https://example.com/skodaoctavia/oil_filter_1.jpg",
+              "https://example.com/skodaoctavia/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 17500,
+            "images": [
+              "https://example.com/skodaoctavia/battery_1.jpg",
+              "https://example.com/skodaoctavia/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 10000,
+            "images": [
+              "https://example.com/skodaoctavia/front_brakes_1.jpg",
+              "https://example.com/skodaoctavia/front_brakes_2.jpg"
+            ]
+          },
+          {
+            "name": "مساعدين أمامي",
+            "price": 19500,
+            "images": [
+              "https://example.com/skodaoctavia/front_shocks_1.jpg",
+              "https://example.com/skodaoctavia/front_shocks_2.jpg"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "Citroen": {
+    "models": {
+      "C3": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 2400,
+            "images": [
+              "https://example.com/citroenc3/oil_filter_1.jpg",
+              "https://example.com/citroenc3/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 14500,
+            "images": [
+              "https://example.com/citroenc3/battery_1.jpg",
+              "https://example.com/citroenc3/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فلتر هواء",
+            "price": 2100,
+            "images": [
+              "https://example.com/citroenc3/air_filter_1.jpg",
+              "https://example.com/citroenc3/air_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "شمعات احتراق",
+            "price": 3600,
+            "images": [
+              "https://example.com/citroenc3/spark_plugs_1.jpg",
+              "https://example.com/citroenc3/spark_plugs_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 8000,
+            "images": [
+              "https://example.com/citroenc3/front_brakes_1.jpg",
+              "https://example.com/citroenc3/front_brakes_2.jpg"
+            ]
+          }
+        ]
+      },
+      "C4": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 2700,
+            "images": [
+              "https://example.com/citroenc4/oil_filter_1.jpg",
+              "https://example.com/citroenc4/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 16000,
+            "images": [
+              "https://example.com/citroenc4/battery_1.jpg",
+              "https://example.com/citroenc4/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 9000,
+            "images": [
+              "https://example.com/citroenc4/front_brakes_1.jpg",
+              "https://example.com/citroenc4/front_brakes_2.jpg"
+            ]
+          },
+          {
+            "name": "مساعدين أمامي",
+            "price": 17500,
+            "images": [
+              "https://example.com/citroenc4/front_shocks_1.jpg",
+              "https://example.com/citroenc4/front_shocks_2.jpg"
+            ]
+          }
+        ]
+      },
+      "C-Elysee": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 2300,
+            "images": [
+              "https://example.com/citroencelysee/oil_filter_1.jpg",
+              "https://example.com/citroencelysee/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 14000,
+            "images": [
+              "https://example.com/citroencelysee/battery_1.jpg",
+              "https://example.com/citroencelysee/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فلتر هواء",
+            "price": 2000,
+            "images": [
+              "https://example.com/citroencelysee/air_filter_1.jpg",
+              "https://example.com/citroencelysee/air_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "شمعات احتراق",
+            "price": 3500,
+            "images": [
+              "https://example.com/citroencelysee/spark_plugs_1.jpg",
+              "https://example.com/citroencelysee/spark_plugs_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 7800,
+            "images": [
+              "https://example.com/citroencelysee/front_brakes_1.jpg",
+              "https://example.com/citroencelysee/front_brakes_2.jpg"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "Opel": {
+    "models": {
+      "Corsa": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 2500,
+            "images": [
+              "https://example.com/opelcorsa/oil_filter_1.jpg",
+              "https://example.com/opelcorsa/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 15000,
+            "images": [
+              "https://example.com/opelcorsa/battery_1.jpg",
+              "https://example.com/opelcorsa/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فلتر هواء",
+            "price": 2100,
+            "images": [
+              "https://example.com/opelcorsa/air_filter_1.jpg",
+              "https://example.com/opelcorsa/air_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "شمعات احتراق",
+            "price": 3800,
+            "images": [
+              "https://example.com/opelcorsa/spark_plugs_1.jpg",
+              "https://example.com/opelcorsa/spark_plugs_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 8200,
+            "images": [
+              "https://example.com/opelcorsa/front_brakes_1.jpg",
+              "https://example.com/opelcorsa/front_brakes_2.jpg"
+            ]
+          }
+        ]
+      },
+      "Astra": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 2800,
+            "images": [
+              "https://example.com/opelastra/oil_filter_1.jpg",
+              "https://example.com/opelastra/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 16500,
+            "images": [
+              "https://example.com/opelastra/battery_1.jpg",
+              "https://example.com/opelastra/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 9500,
+            "images": [
+              "https://example.com/opelastra/front_brakes_1.jpg",
+              "https://example.com/opelastra/front_brakes_2.jpg"
+            ]
+          },
+          {
+            "name": "مساعدين أمامي",
+            "price": 18000,
+            "images": [
+              "https://example.com/opelastra/front_shocks_1.jpg",
+              "https://example.com/opelastra/front_shocks_2.jpg"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "Ford": {
+    "models": {
+      "Fiesta": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 2600,
+            "images": [
+              "https://example.com/fordfiesta/oil_filter_1.jpg",
+              "https://example.com/fordfiesta/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 15500,
+            "images": [
+              "https://example.com/fordfiesta/battery_1.jpg",
+              "https://example.com/fordfiesta/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فلتر هواء",
+            "price": 2200,
+            "images": [
+              "https://example.com/fordfiesta/air_filter_1.jpg",
+              "https://example.com/fordfiesta/air_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "شمعات احتراق",
+            "price": 3900,
+            "images": [
+              "https://example.com/fordfiesta/spark_plugs_1.jpg",
+              "https://example.com/fordfiesta/spark_plugs_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 8500,
+            "images": [
+              "https://example.com/fordfiesta/front_brakes_1.jpg",
+              "https://example.com/fordfiesta/front_brakes_2.jpg"
+            ]
+          }
+        ]
+      },
+      "Focus": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 2900,
+            "images": [
+              "https://example.com/fordfocus/oil_filter_1.jpg",
+              "https://example.com/fordfocus/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 17000,
+            "images": [
+              "https://example.com/fordfocus/battery_1.jpg",
+              "https://example.com/fordfocus/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 9800,
+            "images": [
+              "https://example.com/fordfocus/front_brakes_1.jpg",
+              "https://example.com/fordfocus/front_brakes_2.jpg"
+            ]
+          },
+          {
+            "name": "مساعدين أمامي",
+            "price": 19000,
+            "images": [
+              "https://example.com/fordfocus/front_shocks_1.jpg",
+              "https://example.com/fordfocus/front_shocks_2.jpg"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
+            { "price": 4200,
+            "images": [
+              "https://example.com/toyotacorolla/spark_plugs_1.jpg",
+              "https://example.com/toyotacorolla/spark_plugs_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 9200,
+            "images": [
+              "https://example.com/toyotacorolla/front_brakes_1.jpg",
+              "https://example.com/toyotacorolla/front_brakes_2.jpg"
+            ]
+          },
+          {
+            "name": "مساعدين أمامي",
+            "price": 18500,
+            "images": [
+              "https://example.com/toyotacorolla/front_shocks_1.jpg",
+              "https://example.com/toyotacorolla/front_shocks_2.jpg"
+            ]
+          }
+        ]
+      },
+      "Hilux": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 3500,
+            "images": [
+              "https://example.com/toyotahilux/oil_filter_1.jpg",
+              "https://example.com/toyotahilux/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 22000,
+            "images": [
+              "https://example.com/toyotahilux/battery_1.jpg",
+              "https://example.com/toyotahilux/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فلتر هواء",
+            "price": 2800,
+            "images": [
+              "https://example.com/toyotahilux/air_filter_1.jpg",
+              "https://example.com/toyotahilux/air_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 12500,
+            "images": [
+              "https://example.com/toyotahilux/front_brakes_1.jpg",
+              "https://example.com/toyotahilux/front_brakes_2.jpg"
+            ]
+          },
+          {
+            "name": "مساعدين أمامي",
+            "price": 25000,
+            "images": [
+              "https://example.com/toyotahilux/front_shocks_1.jpg",
+              "https://example.com/toyotahilux/front_shocks_2.jpg"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "Nissan": {
+    "models": {
+      "Micra": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 2200,
+            "images": [
+              "https://example.com/nissanmicra/oil_filter_1.jpg",
+              "https://example.com/nissanmicra/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 13500,
+            "images": [
+              "https://example.com/nissanmicra/battery_1.jpg",
+              "https://example.com/nissanmicra/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فلتر هواء",
+            "price": 1900,
+            "images": [
+              "https://example.com/nissanmicra/air_filter_1.jpg",
+              "https://example.com/nissanmicra/air_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "شمعات احتراق",
+            "price": 3600,
+            "images": [
+              "https://example.com/nissanmicra/spark_plugs_1.jpg",
+              "https://example.com/nissanmicra/spark_plugs_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 7200,
+            "images": [
+              "https://example.com/nissanmicra/front_brakes_1.jpg",
+              "https://example.com/nissanmicra/front_brakes_2.jpg"
+            ]
+          }
+        ]
+      },
+      "Qashqai": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 3000,
+            "images": [
+              "https://example.com/nissanqashqai/oil_filter_1.jpg",
+              "https://example.com/nissanqashqai/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 17500,
+            "images": [
+              "https://example.com/nissanqashqai/battery_1.jpg",
+              "https://example.com/nissanqashqai/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فلتر هواء",
+            "price": 2500,
+            "images": [
+              "https://example.com/nissanqashqai/air_filter_1.jpg",
+              "https://example.com/nissanqashqai/air_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 10000,
+            "images": [
+              "https://example.com/nissanqashqai/front_brakes_1.jpg",
+              "https://example.com/nissanqashqai/front_brakes_2.jpg"
+            ]
+          },
+          {
+            "name": "مساعدين أمامي",
+            "price": 19500,
+            "images": [
+              "https://example.com/nissanqashqai/front_shocks_1.jpg",
+              "https://example.com/nissanqashqai/front_shocks_2.jpg"
+            ]
+          }
+        ]
+      },
+      "X-Trail": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 3200,
+            "images": [
+              "https://example.com/nissanxtrail/oil_filter_1.jpg",
+              "https://example.com/nissanxtrail/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 19000,
+            "images": [
+              "https://example.com/nissanxtrail/battery_1.jpg",
+              "https://example.com/nissanxtrail/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 11000,
+            "images": [
+              "https://example.com/nissanxtrail/front_brakes_1.jpg",
+              "https://example.com/nissanxtrail/front_brakes_2.jpg"
+            ]
+          },
+          {
+            "name": "مساعدين أمامي",
+            "price": 21000,
+            "images": [
+              "https://example.com/nissanxtrail/front_shocks_1.jpg",
+              "https://example.com/nissanxtrail/front_shocks_2.jpg"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "Seat": {
+    "models": {
+      "Ibiza": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 2500,
+            "images": [
+              "https://example.com/seatibiza/oil_filter_1.jpg",
+              "https://example.com/seatibiza/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 15000,
+            "images": [
+              "https://example.com/seatibiza/battery_1.jpg",
+              "https://example.com/seatibiza/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فلتر هواء",
+            "price": 2100,
+            "images": [
+              "https://example.com/seatibiza/air_filter_1.jpg",
+              "https://example.com/seatibiza/air_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "شمعات احتراق",
+            "price": 3900,
+            "images": [
+              "https://example.com/seatibiza/spark_plugs_1.jpg",
+              "https://example.com/seatibiza/spark_plugs_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 8200,
+            "images": [
+              "https://example.com/seatibiza/front_brakes_1.jpg",
+              "https://example.com/seatibiza/front_brakes_2.jpg"
+            ]
+          }
+        ]
+      },
+      "Leon": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 2800,
+            "images": [
+              "https://example.com/seatleon/oil_filter_1.jpg",
+              "https://example.com/seatleon/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 16500,
+            "images": [
+              "https://example.com/seatleon/battery_1.jpg",
+              "https://example.com/seatleon/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فلتر هواء",
+            "price": 2300,
+            "images": [
+              "https://example.com/seatleon/air_filter_1.jpg",
+              "https://example.com/seatleon/air_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "شمعات احتراق",
+            "price": 4200,
+            "images": [
+              "https://example.com/seatleon/spark_plugs_1.jpg",
+              "https://example.com/seatleon/spark_plugs_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 9500,
+            "images": [
+              "https://example.com/seatleon/front_brakes_1.jpg",
+              "https://example.com/seatleon/front_brakes_2.jpg"
+            ]
+          },
+          {
+            "name": "مساعدين أمامي",
+            "price": 18500,
+            "images": [
+              "https://example.com/seatleon/front_shocks_1.jpg",
+              "https://example.com/seatleon/front_shocks_2.jpg"
+            ]
+          }
+        ]
+      },
+      "Arona": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 2700,
+            "images": [
+              "https://example.com/seatarona/oil_filter_1.jpg",
+              "https://example.com/seatarona/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 16000,
+            "images": [
+              "https://example.com/seatarona/battery_1.jpg",
+              "https://example.com/seatarona/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 8800,
+            "images": [
+              "https://example.com/seatarona/front_brakes_1.jpg",
+              "https://example.com/seatarona/front_brakes_2.jpg"
+            ]
+          },
+          {
+            "name": "مساعدين أمامي",
+            "price": 17500,
+            "images": [
+              "https://example.com/seatarona/front_shocks_1.jpg",
+              "https://example.com/seatarona/front_shocks_2.jpg"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "Fiat": {
+    "models": {
+      "Panda": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 2100,
+            "images": [
+              "https://example.com/fiatpanda/oil_filter_1.jpg",
+              "https://example.com/fiatpanda/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 13000,
+            "images": [
+              "https://example.com/fiatpanda/battery_1.jpg",
+              "https://example.com/fiatpanda/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فلتر هواء",
+            "price": 1850,
+            "images": [
+              "https://example.com/fiatpanda/air_filter_1.jpg",
+              "https://example.com/fiatpanda/air_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "شمعات احتراق",
+            "price": 3400,
+            "images": [
+              "https://example.com/fiatpanda/spark_plugs_1.jpg",
+              "https://example.com/fiatpanda/spark_plugs_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 6800,
+            "images": [
+              "https://example.com/fiatpanda/front_brakes_1.jpg",
+              "https://example.com/fiatpanda/front_brakes_2.jpg"
+            ]
+          }
+        ]
+      },
+      "500": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 2300,
+            "images": [
+              "https://example.com/fiat500/oil_filter_1.jpg",
+              "https://example.com/fiat500/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 14000,
+            "images": [
+              "https://example.com/fiat500/battery_1.jpg",
+              "https://example.com/fiat500/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فلتر هواء",
+            "price": 2000,
+            "images": [
+              "https://example.com/fiat500/air_filter_1.jpg",
+              "https://example.com/fiat500/air_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "شمعات احتراق",
+            "price": 3600,
+            "images": [
+              "https://example.com/fiat500/spark_plugs_1.jpg",
+              "https://example.com/fiat500/spark_plugs_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 7500,
+            "images": [
+              "https://example.com/fiat500/front_brakes_1.jpg",
+              "https://example.com/fiat500/front_brakes_2.jpg"
+            ]
+          }
+        ]
+      },
+      "Tipo": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 2500,
+            "images": [
+              "https://example.com/fiattipo/oil_filter_1.jpg",
+              "https://example.com/fiattipo/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 15000,
+            "images": [
+              "https://example.com/fiattipo/battery_1.jpg",
+              "https://example.com/fiattipo/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 8000,
+            "images": [
+              "https://example.com/fiattipo/front_brakes_1.jpg",
+              "https://example.com/fiattipo/front_brakes_2.jpg"
+            ]
+          },
+          {
+            "name": "مساعدين أمامي",
+            "price": 16500,
+            "images": [
+              "https://example.com/fiattipo/front_shocks_1.jpg",
+              "https://example.com/fiattipo/front_shocks_2.jpg"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "Dacia": {
+    "models": {
+      "Sandero": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 2100,
+            "images": [
+              "https://example.com/daciasandero/oil_filter_1.jpg",
+              "https://example.com/daciasandero/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 13000,
+            "images": [
+              "https://example.com/daciasandero/battery_1.jpg",
+              "https://example.com/daciasandero/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فلتر هواء",
+            "price": 1800,
+            "images": [
+              "https://example.com/daciasandero/air_filter_1.jpg",
+              "https://example.com/daciasandero/air_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "شمعات احتراق",
+            "price": 3500,
+            "images": [
+              "https://example.com/daciasandero/spark_plugs_1.jpg",
+              "https://example.com/daciasandero/spark_plugs_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 7000,
+            "images": [
+              "https://example.com/daciasandero/front_brakes_1.jpg",
+              "https://example.com/daciasandero/front_brakes_2.jpg"
+            ]
+          }
+        ]
+      },
+      "Logan": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 2200,
+            "images": [
+              "https://example.com/dacialogan/oil_filter_1.jpg",
+              "https://example.com/dacialogan/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 13500,
+            "images": [
+              "https://example.com/dacialogan/battery_1.jpg",
+              "https://example.com/dacialogan/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فلتر هواء",
+            "price": 1900,
+            "images": [
+              "https://example.com/dacialogan/air_filter_1.jpg",
+              "https://example.com/dacialogan/air_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "شمعات احتراق",
+            "price": 3600,
+            "images": [
+              "https://example.com/dacialogan/spark_plugs_1.jpg",
+              "https://example.com/dacialogan/spark_plugs_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 7200,
+            "images": [
+              "https://example.com/dacialogan/front_brakes_1.jpg",
+              "https://example.com/dacialogan/front_brakes_2.jpg"
+            ]
+          },
+          {
+            "name": "مساعدين أمامي",
+            "price": 15500,
+            "images": [
+              "https://example.com/dacialogan/front_shocks_1.jpg",
+              "https://example.com/dacialogan/front_shocks_2.jpg"
+            ]
+          }
+        ]
+      },
+      "Duster": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 2600,
+            "images": [
+              "https://example.com/daciaduster/oil_filter_1.jpg",
+              "https://example.com/daciaduster/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 16500,
+            "images": [
+              "https://example.com/daciaduster/battery_1.jpg",
+              "https://example.com/daciaduster/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فلتر هواء",
+            "price": 2300,
+            "images": [
+              "https://example.com/daciaduster/air_filter_1.jpg",
+              "https://example.com/daciaduster/air_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 9000,
+            "images": [
+              "https://example.com/daciaduster/front_brakes_1.jpg",
+              "https://example.com/daciaduster/front_brakes_2.jpg"
+            ]
+          },
+          {
+            "name": "مساعدين أمامي",
+            "price": 18000,
+            "images": [
+              "https://example.com/daciaduster/front_shocks_1.jpg",
+              "https://example.com/daciaduster/front_shocks_2.jpg"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "Chery": {
+    "models": {
+      "Tiggo": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 2000,
+            "images": [
+              "https://example.com/cherytiggo/oil_filter_1.jpg",
+              "https://example.com/cherytiggo/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 14000,
+            "images": [
+              "https://example.com/cherytiggo/battery_1.jpg",
+              "https://example.com/cherytiggo/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فلتر هواء",
+            "price": 1800,
+            "images": [
+              "https://example.com/cherytiggo/air_filter_1.jpg",
+              "https://example.com/cherytiggo/air_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "شمعات احتراق",
+            "price": 3300,
+            "images": [
+              "https://example.com/cherytiggo/spark_plugs_1.jpg",
+              "https://example.com/cherytiggo/spark_plugs_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 7800,
+            "images": [
+              "https://example.com/cherytiggo/front_brakes_1.jpg",
+              "https://example.com/cherytiggo/front_brakes_2.jpg"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "Suzuki": {
+    "models": {
+      "Swift": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 2200,
+            "images": [
+              "https://example.com/suzukiswift/oil_filter_1.jpg",
+              "https://example.com/suzukiswift/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 14000,
+            "images": [
+              "https://example.com/suzukiswift/battery_1.jpg",
+              "https://example.com/suzukiswift/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فلتر هواء",
+            "price": 1900,
+            "images": [
+              "https://example.com/suzukiswift/air_filter_1.jpg",
+              "https://example.com/suzukiswift/air_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "شمعات احتراق",
+            "price": 3200,
+            "images": [
+              "https://example.com/peugeot208/spark_plugs_1.jpg",
+              "https://example.com/peugeot208/spark_plugs_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 8500,
+            "images": [
+              "https://example.com/peugeot208/front_brakes_1.jpg",
+              "https://example.com/peugeot208/front_brakes_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل خلفية",
+            "price": 6500,
+            "images": [
+              "https://example.com/peugeot208/rear_brakes_1.jpg",
+              "https://example.com/peugeot208/rear_brakes_2.jpg"
+            ]
+          },
+          {
+            "name": "مصابيح أمامية LED",
+            "price": 12000,
+            "images": [
+              "https://example.com/peugeot208/headlights_1.jpg",
+              "https://example.com/peugeot208/headlights_2.jpg"
+            ]
           }
         ]
       },
@@ -37,6 +1416,110 @@
             "images": [
               "https://example.com/peugeot308/fuel_pump_1.jpg",
               "https://example.com/peugeot308/fuel_pump_2.jpg"
+            ]
+          },
+          {
+            "name": "فلتر زيت",
+            "price": 2800,
+            "images": [
+              "https://example.com/peugeot308/oil_filter_1.jpg",
+              "https://example.com/peugeot308/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 16500,
+            "images": [
+              "https://example.com/peugeot308/battery_1.jpg",
+              "https://example.com/peugeot308/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 9500,
+            "images": [
+              "https://example.com/peugeot308/front_brakes_1.jpg",
+              "https://example.com/peugeot308/front_brakes_2.jpg"
+            ]
+          },
+          {
+            "name": "مساعدين أمامي",
+            "price": 18000,
+            "images": [
+              "https://example.com/peugeot308/front_shocks_1.jpg",
+              "https://example.com/peugeot308/front_shocks_2.jpg"
+            ]
+          }
+        ]
+      },
+      "2008": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 2600,
+            "images": [
+              "https://example.com/peugeot2008/oil_filter_1.jpg",
+              "https://example.com/peugeot2008/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 17000,
+            "images": [
+              "https://example.com/peugeot2008/battery_1.jpg",
+              "https://example.com/peugeot2008/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فلتر هواء",
+            "price": 2400,
+            "images": [
+              "https://example.com/peugeot2008/air_filter_1.jpg",
+              "https://example.com/peugeot2008/air_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 9000,
+            "images": [
+              "https://example.com/peugeot2008/front_brakes_1.jpg",
+              "https://example.com/peugeot2008/front_brakes_2.jpg"
+            ]
+          }
+        ]
+      },
+      "3008": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 3000,
+            "images": [
+              "https://example.com/peugeot3008/oil_filter_1.jpg",
+              "https://example.com/peugeot3008/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 18500,
+            "images": [
+              "https://example.com/peugeot3008/battery_1.jpg",
+              "https://example.com/peugeot3008/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 11000,
+            "images": [
+              "https://example.com/peugeot3008/front_brakes_1.jpg",
+              "https://example.com/peugeot3008/front_brakes_2.jpg"
+            ]
+          },
+          {
+            "name": "مصابيح أمامية LED",
+            "price": 15000,
+            "images": [
+              "https://example.com/peugeot3008/headlights_1.jpg",
+              "https://example.com/peugeot3008/headlights_2.jpg"
             ]
           }
         ]
@@ -62,9 +1545,596 @@
               "https://example.com/renaultclio4/spark_plug_1.jpg",
               "https://example.com/renaultclio4/spark_plug_2.jpg"
             ]
+          },
+          {
+            "name": "فلتر زيت",
+            "price": 2300,
+            "images": [
+              "https://example.com/renaultclio4/oil_filter_1.jpg",
+              "https://example.com/renaultclio4/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 14500,
+            "images": [
+              "https://example.com/renaultclio4/battery_1.jpg",
+              "https://example.com/renaultclio4/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 7500,
+            "images": [
+              "https://example.com/renaultclio4/front_brakes_1.jpg",
+              "https://example.com/renaultclio4/front_brakes_2.jpg"
+            ]
+          }
+        ]
+      },
+      "Symbol": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 2200,
+            "images": [
+              "https://example.com/renaultsymbol/oil_filter_1.jpg",
+              "https://example.com/renaultsymbol/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 13500,
+            "images": [
+              "https://example.com/renaultsymbol/battery_1.jpg",
+              "https://example.com/renaultsymbol/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فلتر هواء",
+            "price": 1900,
+            "images": [
+              "https://example.com/renaultsymbol/air_filter_1.jpg",
+              "https://example.com/renaultsymbol/air_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بوجيهات",
+            "price": 3800,
+            "images": [
+              "https://example.com/renaultsymbol/spark_plugs_1.jpg",
+              "https://example.com/renaultsymbol/spark_plugs_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 7000,
+            "images": [
+              "https://example.com/renaultsymbol/front_brakes_1.jpg",
+              "https://example.com/renaultsymbol/front_brakes_2.jpg"
+            ]
+          }
+        ]
+      },
+      "Megane": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 2700,
+            "images": [
+              "https://example.com/renaultmegane/oil_filter_1.jpg",
+              "https://example.com/renaultmegane/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 16000,
+            "images": [
+              "https://example.com/renaultmegane/battery_1.jpg",
+              "https://example.com/renaultmegane/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "بوجيهات",
+            "price": 4200,
+            "images": [
+              "https://example.com/renaultmegane/spark_plugs_1.jpg",
+              "https://example.com/renaultmegane/spark_plugs_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 8800,
+            "images": [
+              "https://example.com/renaultmegane/front_brakes_1.jpg",
+              "https://example.com/renaultmegane/front_brakes_2.jpg"
+            ]
+          },
+          {
+            "name": "مساعدين أمامي",
+            "price": 17500,
+            "images": [
+              "https://example.com/renaultmegane/front_shocks_1.jpg",
+              "https://example.com/renaultmegane/front_shocks_2.jpg"
+            ]
+          }
+        ]
+      },
+      "Duster": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 2800,
+            "images": [
+              "https://example.com/renaultduster/oil_filter_1.jpg",
+              "https://example.com/renaultduster/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 17500,
+            "images": [
+              "https://example.com/renaultduster/battery_1.jpg",
+              "https://example.com/renaultduster/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فلتر هواء",
+            "price": 2500,
+            "images": [
+              "https://example.com/renaultduster/air_filter_1.jpg",
+              "https://example.com/renaultduster/air_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 9500,
+            "images": [
+              "https://example.com/renaultduster/front_brakes_1.jpg",
+              "https://example.com/renaultduster/front_brakes_2.jpg"
+            ]
+          },
+          {
+            "name": "مساعدين أمامي",
+            "price": 19000,
+            "images": [
+              "https://example.com/renaultduster/front_shocks_1.jpg",
+              "https://example.com/renaultduster/front_shocks_2.jpg"
+            ]
           }
         ]
       }
     }
-  }
-}
+  },
+  "Volkswagen": {
+    "models": {
+      "Golf 7": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 3200,
+            "images": [
+              "https://example.com/vwgolf7/oil_filter_1.jpg",
+              "https://example.com/vwgolf7/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 18000,
+            "images": [
+              "https://example.com/vwgolf7/battery_1.jpg",
+              "https://example.com/vwgolf7/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "شمعات احتراق",
+            "price": 4500,
+            "images": [
+              "https://example.com/vwgolf7/spark_plugs_1.jpg",
+              "https://example.com/vwgolf7/spark_plugs_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 10500,
+            "images": [
+              "https://example.com/vwgolf7/front_brakes_1.jpg",
+              "https://example.com/vwgolf7/front_brakes_2.jpg"
+            ]
+          },
+          {
+            "name": "مساعدين أمامي",
+            "price": 20000,
+            "images": [
+              "https://example.com/vwgolf7/front_shocks_1.jpg",
+              "https://example.com/vwgolf7/front_shocks_2.jpg"
+            ]
+          }
+        ]
+      },
+      "Polo": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 2900,
+            "images": [
+              "https://example.com/vwpolo/oil_filter_1.jpg",
+              "https://example.com/vwpolo/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 16500,
+            "images": [
+              "https://example.com/vwpolo/battery_1.jpg",
+              "https://example.com/vwpolo/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فلتر هواء",
+            "price": 2400,
+            "images": [
+              "https://example.com/vwpolo/air_filter_1.jpg",
+              "https://example.com/vwpolo/air_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "شمعات احتراق",
+            "price": 4000,
+            "images": [
+              "https://example.com/vwpolo/spark_plugs_1.jpg",
+              "https://example.com/vwpolo/spark_plugs_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 8500,
+            "images": [
+              "https://example.com/vwpolo/front_brakes_1.jpg",
+              "https://example.com/vwpolo/front_brakes_2.jpg"
+            ]
+          }
+        ]
+      },
+      "Tiguan": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 3500,
+            "images": [
+              "https://example.com/vwtiguan/oil_filter_1.jpg",
+              "https://example.com/vwtiguan/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 20000,
+            "images": [
+              "https://example.com/vwtiguan/battery_1.jpg",
+              "https://example.com/vwtiguan/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 12000,
+            "images": [
+              "https://example.com/vwtiguan/front_brakes_1.jpg",
+              "https://example.com/vwtiguan/front_brakes_2.jpg"
+            ]
+          },
+          {
+            "name": "مساعدين أمامي",
+            "price": 22000,
+            "images": [
+              "https://example.com/vwtiguan/front_shocks_1.jpg",
+              "https://example.com/vwtiguan/front_shocks_2.jpg"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "Hyundai": {
+    "models": {
+      "i10": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 2100,
+            "images": [
+              "https://example.com/hyundaii10/oil_filter_1.jpg",
+              "https://example.com/hyundaii10/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 13000,
+            "images": [
+              "https://example.com/hyundaii10/battery_1.jpg",
+              "https://example.com/hyundaii10/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فلتر هواء",
+            "price": 1800,
+            "images": [
+              "https://example.com/hyundaii10/air_filter_1.jpg",
+              "https://example.com/hyundaii10/air_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "شمعات احتراق",
+            "price": 3500,
+            "images": [
+              "https://example.com/hyundaii10/spark_plugs_1.jpg",
+              "https://example.com/hyundaii10/spark_plugs_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 7000,
+            "images": [
+              "https://example.com/hyundaii10/front_brakes_1.jpg",
+              "https://example.com/hyundaii10/front_brakes_2.jpg"
+            ]
+          }
+        ]
+      },
+      "i20": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 2400,
+            "images": [
+              "https://example.com/hyundaii20/oil_filter_1.jpg",
+              "https://example.com/hyundaii20/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 14500,
+            "images": [
+              "https://example.com/hyundaii20/battery_1.jpg",
+              "https://example.com/hyundaii20/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فلتر هواء",
+            "price": 2000,
+            "images": [
+              "https://example.com/hyundaii20/air_filter_1.jpg",
+              "https://example.com/hyundaii20/air_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "شمعات احتراق",
+            "price": 3800,
+            "images": [
+              "https://example.com/hyundaii20/spark_plugs_1.jpg",
+              "https://example.com/hyundaii20/spark_plugs_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 8000,
+            "images": [
+              "https://example.com/hyundaii20/front_brakes_1.jpg",
+              "https://example.com/hyundaii20/front_brakes_2.jpg"
+            ]
+          }
+        ]
+      },
+      "Tucson": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 3000,
+            "images": [
+              "https://example.com/hyundaitucson/oil_filter_1.jpg",
+              "https://example.com/hyundaitucson/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 18000,
+            "images": [
+              "https://example.com/hyundaitucson/battery_1.jpg",
+              "https://example.com/hyundaitucson/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 10500,
+            "images": [
+              "https://example.com/hyundaitucson/front_brakes_1.jpg",
+              "https://example.com/hyundaitucson/front_brakes_2.jpg"
+            ]
+          },
+          {
+            "name": "مساعدين أمامي",
+            "price": 19500,
+            "images": [
+              "https://example.com/hyundaitucson/front_shocks_1.jpg",
+              "https://example.com/hyundaitucson/front_shocks_2.jpg"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "Kia": {
+    "models": {
+      "Picanto": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 2000,
+            "images": [
+              "https://example.com/kiapicanto/oil_filter_1.jpg",
+              "https://example.com/kiapicanto/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 12500,
+            "images": [
+              "https://example.com/kiapicanto/battery_1.jpg",
+              "https://example.com/kiapicanto/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فلتر هواء",
+            "price": 1700,
+            "images": [
+              "https://example.com/kiapicanto/air_filter_1.jpg",
+              "https://example.com/kiapicanto/air_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "شمعات احتراق",
+            "price": 3400,
+            "images": [
+              "https://example.com/kiapicanto/spark_plugs_1.jpg",
+              "https://example.com/kiapicanto/spark_plugs_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 6800,
+            "images": [
+              "https://example.com/kiapicanto/front_brakes_1.jpg",
+              "https://example.com/kiapicanto/front_brakes_2.jpg"
+            ]
+          }
+        ]
+      },
+      "Rio": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 2300,
+            "images": [
+              "https://example.com/kiario/oil_filter_1.jpg",
+              "https://example.com/kiario/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 14000,
+            "images": [
+              "https://example.com/kiario/battery_1.jpg",
+              "https://example.com/kiario/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فلتر هواء",
+            "price": 1950,
+            "images": [
+              "https://example.com/kiario/air_filter_1.jpg",
+              "https://example.com/kiario/air_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "شمعات احتراق",
+            "price": 3700,
+            "images": [
+              "https://example.com/kiario/spark_plugs_1.jpg",
+              "https://example.com/kiario/spark_plugs_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 7500,
+            "images": [
+              "https://example.com/kiario/front_brakes_1.jpg",
+              "https://example.com/kiario/front_brakes_2.jpg"
+            ]
+          }
+        ]
+      },
+      "Sportage": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 2900,
+            "images": [
+              "https://example.com/kiasportage/oil_filter_1.jpg",
+              "https://example.com/kiasportage/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 17500,
+            "images": [
+              "https://example.com/kiasportage/battery_1.jpg",
+              "https://example.com/kiasportage/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 10000,
+            "images": [
+              "https://example.com/kiasportage/front_brakes_1.jpg",
+              "https://example.com/kiasportage/front_brakes_2.jpg"
+            ]
+          },
+          {
+            "name": "مساعدين أمامي",
+            "price": 19000,
+            "images": [
+              "https://example.com/kiasportage/front_shocks_1.jpg",
+              "https://example.com/kiasportage/front_shocks_2.jpg"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "Toyota": {
+    "models": {
+      "Yaris": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 2600,
+            "images": [
+              "https://example.com/toyotayaris/oil_filter_1.jpg",
+              "https://example.com/toyotayaris/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 15500,
+            "images": [
+              "https://example.com/toyotayaris/battery_1.jpg",
+              "https://example.com/toyotayaris/battery_2.jpg"
+            ]
+          },
+          {
+            "name": "فلتر هواء",
+            "price": 2200,
+            "images": [
+              "https://example.com/toyotayaris/air_filter_1.jpg",
+              "https://example.com/toyotayaris/air_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "شمعات احتراق",
+            "price": 4000,
+            "images": [
+              "https://example.com/toyotayaris/spark_plugs_1.jpg",
+              "https://example.com/toyotayaris/spark_plugs_2.jpg"
+            ]
+          },
+          {
+            "name": "فرامل أمامية",
+            "price": 8500,
+            "images": [
+              "https://example.com/toyotayaris/front_brakes_1.jpg",
+              "https://example.com/toyotayaris/front_brakes_2.jpg"
+            ]
+          }
+        ]
+      },
+
+
