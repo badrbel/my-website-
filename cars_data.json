@@ -1,0 +1,70 @@
+{
+  "Peugeot": {
+    "models": {
+      "208": {
+        "parts": [
+          {
+            "name": "فلتر زيت",
+            "price": 2500,
+            "images": [
+              "https://example.com/peugeot208/oil_filter_1.jpg",
+              "https://example.com/peugeot208/oil_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بطارية",
+            "price": 15000,
+            "images": [
+              "https://example.com/peugeot208/battery_1.jpg",
+              "https://example.com/peugeot208/battery_2.jpg"
+            ]
+          }
+        ]
+      },
+      "308": {
+        "parts": [
+          {
+            "name": "شمعات احتراق",
+            "price": 3500,
+            "images": [
+              "https://example.com/peugeot308/spark_plug_1.jpg",
+              "https://example.com/peugeot308/spark_plug_2.jpg"
+            ]
+          },
+          {
+            "name": "مضخة وقود",
+            "price": 11000,
+            "images": [
+              "https://example.com/peugeot308/fuel_pump_1.jpg",
+              "https://example.com/peugeot308/fuel_pump_2.jpg"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "Renault": {
+    "models": {
+      "Clio 4": {
+        "parts": [
+          {
+            "name": "فلتر هواء",
+            "price": 2000,
+            "images": [
+              "https://example.com/renaultclio4/air_filter_1.jpg",
+              "https://example.com/renaultclio4/air_filter_2.jpg"
+            ]
+          },
+          {
+            "name": "بوجيهات",
+            "price": 4000,
+            "images": [
+              "https://example.com/renaultclio4/spark_plug_1.jpg",
+              "https://example.com/renaultclio4/spark_plug_2.jpg"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
